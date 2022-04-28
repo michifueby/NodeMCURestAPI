@@ -11,7 +11,7 @@ create table TBL_Sensor
 );
 ```
 
-## Get Data from Sensor with Get
+## Get Data from Sensor with GET
 ```php
 $macaddress = ($_GET["id"]);
 $temperature = ($_GET["temperature"]);
