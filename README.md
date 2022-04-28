@@ -23,5 +23,5 @@ https://datatables.net
 
 ## Hardware
 
-![alt text](https://github.com/michifueby/NodeMCURestAPI/blob/master/NodeMCUBoardWithDHT11.png?raw=true)
+![alt text](https://github.com/michifueby/NodeMCURestAPI/blob/main/NodeMCUBoardWithDHT11.png?raw=true)
 
