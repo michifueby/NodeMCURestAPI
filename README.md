@@ -11,7 +11,7 @@ create table TBL_Sensor
 );
 ```
 
-## Get Data from Sensor with Get
+## Get Data from Sensor with GET
 ```php
 $macaddress = ($_GET["id"]);
 $temperature = ($_GET["temperature"]);
@@ -20,3 +20,8 @@ $humidity = ($_GET["humidity"]);
 
 ## Display data with data-tables
 https://datatables.net
+
+## Hardware
+
+![alt text](https://github.com/michifueby/NodeMCURestAPI/blob/master/NodeMCUBoardWithDHT11.png?raw=true)
+
