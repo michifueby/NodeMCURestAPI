@@ -5,12 +5,24 @@
 include('../config.php');
 
 // Get Data
-$macaddress = ($_GET["id"]);
-$temperature = ($_GET["temperature"]);
-$humidity = ($_GET["humidity"]);
+$macaddress = makeReal_escape_string(($_GET["id"]));
+$temperature = makeReal_escape_string(($_GET["temperature"]));
+$humidity = makeReal_escape_string(($_GET["humidity"]));
 
 if ($macaddress != null) {
     insertValues($macaddress, $temperature, $humidity );
+}
+
+// Make real_escape_string
+function makeReal_escape_string($input) {
+    if(is_array($input))
+        return array_map(__METHOD__, $input);
+
+    if(!empty($input) && is_string($input)) {
+        return str_replace(array('\\', "\0", "\n", "\r", "'", '"', "\x1a"), array('\\\\', '\\0', '\\n', '\\r', "\\'", '\\"', '\\Z'), $input);
+    }
+
+    return $input;
 }
 
 // Insert values in database
