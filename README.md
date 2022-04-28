@@ -23,5 +23,8 @@ https://datatables.net
 
 ## Hardware
 
+-Board:     NodeMCU Board
+- Sensor:   DHT11
+
 ![alt text](https://github.com/michifueby/NodeMCURestAPI/blob/main/NodeMCUBoardWithDHT11.png?raw=true)
 
