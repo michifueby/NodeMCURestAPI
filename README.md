@@ -4,7 +4,7 @@
 ```sql
 create table TBL_Sensor
 (
-    macaddress  varchar(100)                 null,
+    macaddress  varchar(100)                 not null,
     temperature decimal(5, 2)                null,
     humidity    decimal(5, 2)                null,
     time        int default unix_timestamp() null
