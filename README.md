@@ -13,9 +13,9 @@ create table TBL_Sensor
 
 ## Get Data from Sensor with GET
 ```php
-$macaddress = ($_GET["id"]);
-$temperature = ($_GET["temperature"]);
-$humidity = ($_GET["humidity"]);
+($_GET["id"])
+($_GET["temperature"])
+($_GET["humidity"])
 ```
 
 ## Display data with data-tables
